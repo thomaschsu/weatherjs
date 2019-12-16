@@ -16,7 +16,3 @@ function getWeather() {
         })
         .catch(err => console.log(err));
 }
-
-function convertKtoC(kelvin) {
-    return Math.round(9/5 * kelvin - 459.67);
-}
