@@ -11,7 +11,7 @@ class UI {
         this.pressure = document.getElementById('w-pressure');
     }
     paint(weather) {
-        this.location.textContent = weather.name;
+        this.location.textContent = `${weather.name} ${weather.sys.country}`;
         this.desc.textContent = weather.weather[0].main;
         this.string.textContent = `${Math.round(weather.main.temp)} ºF`;
         this.icon.setAttribute('src', `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`);
